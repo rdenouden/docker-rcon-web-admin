@@ -1,4 +1,4 @@
-dname: Build and publish multiarch
+name: Build and publish multiarch
 on:
   push:
     branches:
