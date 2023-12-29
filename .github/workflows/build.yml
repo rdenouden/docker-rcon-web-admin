@@ -1,4 +1,4 @@
-name: Build and publish multiarch
+dname: Build and publish multiarch
 on:
   push:
     branches:
@@ -67,8 +67,8 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
           labels: |
-            org.opencontainers.image.documentation=https://github.com/itzg/docker-rcon-web-admin
-            org.opencontainers.image.source=https://github.com/itzg/docker-rcon-web-admin
+            org.opencontainers.image.documentation=https://github.com/rdenouden/docker-rcon-web-admin
+            org.opencontainers.image.source=https://github.com/rdenouden/docker-rcon-web-admin
             org.opencontainers.image.version=${{ steps.prep.outputs.version }}
             org.opencontainers.image.revision=${{ github.sha }}
 
